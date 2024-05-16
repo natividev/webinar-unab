@@ -4,3 +4,8 @@ services:
   bd-webinar:
     container_name: unab_database
     image: postgres:16.2
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    ports:
+      - 5555: 5433
+    
