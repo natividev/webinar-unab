@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.9'
 
 services:
   bd-webinar:
@@ -7,7 +7,7 @@ services:
     volumes:
       - ./postgres:/var/lib/postgresql/data
     ports:
-      - 5555:5433
+      - 5432:5432
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=1234567
