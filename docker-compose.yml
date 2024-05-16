@@ -1,1 +1,6 @@
 version: '3.5'
+
+services:
+  bd-webinar:
+    container_name: unab_database
+    image: postgres:16.2
