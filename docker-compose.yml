@@ -8,4 +8,7 @@ services:
       - ./postgres:/var/lib/postgresql/data
     ports:
       - 5555: 5433
-    
+    environment:
+      - POSTGRES_USER=unab
+      - POSTGRES_PASSWORD=1234567
+      - POSTGRES_DB=ordersdb
